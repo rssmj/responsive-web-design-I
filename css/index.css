@@ -1,3 +1,403 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Bangers", cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* main */
+
+p {
+	font-size: 1.25rem;
+	line-height: 1.45rem;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 1.35em;
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	font-weight: 600;
+}
+
+body {
+	width: 100%;
+}
+
+.container {
+	margin: 2.5% 5% 2% 5%;
+}
+
+.mobile-logo {
+	display: none;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a {
+	font-size: 1.1rem;
+	color: grey;
+}
+
+#iod {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 8% 3% 7% 14%;
+}
+
+.innovation h2 {
+	font-size: 6.5rem;
+	text-align: center;
+	margin-bottom: 11%;
+}
+
+.innovation a {
+	margin-left: 19.5%;
+	font-size: 1.375rem;
+	letter-spacing: 0.035rem;
+	border: 1px solid black;
+	padding: 1.5% 15%;
+}
+
+#top-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 4% 0;
+	border-top: 1px solid black;
+	padding-top: 4%;
+}
+
+.content {
+	padding-right: 1%;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+#bottom-section {
+	display: flex;
+	justify-content: space-between;
+	margin: 4% 0;
+	border-bottom: 1px solid black;
+	padding-bottom: 4%;
+}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	margin: 4% 0;
+}
+
+#copyright {
+	text-align: center;
+	margin: 2%;
+}
+
+/* tablet */
+
+@media (max-width: 800px) {
+	.desktop-logo {
+		display: none;
+	}
+
+	.tablet-logo {
+		display: flex;
+		margin: 5%;
+		justify-content: center;
+	}
+
+	nav {
+		justify-content: space-between;
+	}
+
+	.round-image {
+		display: none;
+	}
+
+	#iod {
+		margin: 12%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.innovation h2 {
+		font-size: 5.2rem;
+	}
+
+	.innovation a {
+		font-size: 1.2rem;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	p {
+		font-size: 1rem;
+		line-height: 1.1rem;
+		margin-right: 2%;
+	}
+
+	#top-section {
+		border-top: 2px solid black;
+	}
+
+	#bottom-section {
+		border-bottom: 2px solid black;
+	}
+
+	#bottom-section p {
+		margin-right: 9%;
+	}
+}
+
+/* mobile */
+
+@media (max-width: 500px) {
+	.mobile-container {
+		margin: 0 auto;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.mobile-logo {
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		padding: 3%;
+		border-bottom: 1px solid #b9b9b9;
+	}
+
+	.desktop-logo {
+		display: none;
+	}
+
+	nav a {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
+		padding: 4%;
+		border-bottom: 1px solid #b9b9b9;
+		color: #b9b9b9;
+	}
+
+	#iod {
+		margin: 10%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.innovation {
+		margin: 2% 10% 8% 10%;
+	}
+
+	.innovation h2 {
+		font-size: 4.1rem;
+	}
+
+	.innovation a {
+		font-size: 0.9rem;
+	}
+
+	.round-image {
+		display: none;
+	}
+
+	#top-section {
+		display: flex;
+		flex-direction: column;
+		border-top: 2px solid black;
+		margin: 6% 5%;
+	}
+
+	.content {
+		margin: 6% 0;
+	}
+
+	h2 {
+		font-size: 1rem;
+	}
+
+	p {
+		font-size: 0.9rem;
+		line-height: 1.1rem;
+	}
+
+	.middle-img {
+		padding: 0 5%;
+	}
+
+	#bottom-section {
+		display: flex;
+		flex-direction: column;
+		border-bottom: 2px solid black;
+		margin: 0 5%;
+	}
+
+	footer {
+		margin: 8% 5%;
+	}
+
+	#copyright {
+		padding-top: 4%;
+	}
+}
